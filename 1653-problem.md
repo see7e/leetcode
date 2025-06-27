@@ -1,11 +1,15 @@
 ---
-title: 976 - LArgest Perimeter Triangle
-tags: studies, programação, leetcode
+title: 976 - Largest Perimeter Triangle
+tags:
+  - studies
+  - programming
+  - leetcode
 use: Problem
-date: 2021-06-30
+date: 2021-07-30
 difficulty: Medium
+status: solved
 languages: Python
-dependences: NULL
+dependences:
 ---
 
 [1653\. Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/)

@@ -1,11 +1,15 @@
 ---
 title: 976 - Largest Perimeter Triangle
-tags: studies, programação, leetcode
+tags:
+  - studies
+  - leetcode
+  - programming
 use: Problem
-date: 2021-06-29
+date: 2021-07-29
 difficulty: Easy
+status: solved
 languages: Python
-dependences: NULL
+dependences:
 ---
 
 [976\. Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)

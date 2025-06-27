@@ -1,15 +1,18 @@
 ---
 title: 1422 - Maximum Score After Splitting a String
-tags: studies, programação, leetcode
+tags:
+  - studies
+  - leetcode
+  - programming
 use: Problem
 date: 2024-12-31
 difficulty: Easy
 languages: Python
-dependences: NULL
+dependences: 
 time:
 ---
 
-[1422. Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/?envType=daily-question&envId=2025-01-01)
+# [1422. Maximum Score After Splitting a String](https://leetcode.com/problems/maximum-score-after-splitting-a-string/description/?envType=daily-question&envId=2025-01-01)
 Given a string `s` of zeros and ones, _return the maximum score after splitting the string into two **non-empty** substrings_ (i.e. **left** substring and **right** substring).
 
 The score after splitting a string is the number of **zeros** in the **left** substring plus the number of **ones** in the **right** substring.
@@ -49,7 +52,7 @@ left = "01110" and right = "1", score = 2 + 1 = 3
 -   The string `s` consists of characters `'0'` and `'1'` only.
 
 # Solution
-The first thought that crossed my mind was to implement two slices of a list and iterate over it's length to get the left and right elements, and then sum which portion got the right numbers.
+The first thought that crossed my mind was to implement two slices of a [list](GAB/Estudos-Trabalhos/PROGRAMAÇÃO/programming-studies/Languages/Python/README.md#lists)) and iterate over it's length to get the left and right elements, and then sum which portion got the right numbers.
 Having the left and right slices, and the score of each one, I've just needed to compare the maximum with the previous score (initialy 0).
 The results were not the best neither the wrost:
 
@@ -60,12 +63,11 @@ The results were not the best neither the wrost:
 
 ## Editorial
 
-> The best two (time related) approaches answers at the editorial have the same beaviour as mine (`O(n)` and `O(1)`).
+> The best two (time related) approaches answers at the editorial have the same behaviour as mine (`O(n)` and `O(1)`).
 
 ### Approach 2: Count Left Zeros and Right Ones
 
 **Intuition**
-
 We can improve on the previous solution by noticing that between a split at index `i` and index `i + 1`, we are only changing one character (more specifically, moving it from the right substring to the left substring), leaving the other characters unchanged. Instead of iterating over the entire string for each split, we only need to check the moved character and calculate the score for the new split based on the previous split.
 
 We start by counting how many times `1` occurs in `s`. Let's store this value in a variable `ones`. We will also have a variable `zeros` that represents how many `0` are in the left part. Initially, our variables `ones` and `zeros` are set as if the left part is empty and the right part is the entire string.
@@ -83,7 +85,6 @@ There are two possibilities for each index `i`:
 We update the answer with `zeros + ones` at each iteration if it is larger.
 
 **Algorithm**
-
 1.  Initialize `ones` as the number of times `1` occurs in `s`.
 2.  Initialize `zeros = 0` and the answer `ans = 0`.
 3.  Iterate `i` from `0` until `s.length - 1`:

@@ -1,11 +1,14 @@
 ---
 title: 2037 - Count Number of Teams
-tags: studies, programação, leetcode
+tags:
+  - studies
+  - leetcode
+  - programming
 use: Problem
 date: 2024-12-31
 difficulty: Easy
 languages: Python
-dependences: NULL
+dependences: 
 time: 16:20
 ---
 

@@ -1,14 +1,18 @@
 ---
 title: 1395 - Count Number of Teams
-tags: studies, programação, leetcode
+tags:
+  - studies
+  - leetcode
+  - programming
 use: Problem
 date: 2021-07-29
 difficulty: Medium
+status: solved
 languages: Python
-dependences: NULL
+dependences:
 ---
 
-[1395\. Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)
+# [1395\. Count Number of Teams](https://leetcode.com/problems/count-number-of-teams/)
 
 There are `n` soldiers standing in a line. Each soldier is assigned a **unique** `rating` value.
 
